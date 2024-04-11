@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {% block content
+%}
+
+<div class="content">
+  <h2>Скоротити довге посилання:</h2>
+  <form action="{{ url_for('index') }}" class="form" method="post">
+    {% for field in form %} {% for error in field.errors %}<span class="error"
+      >{{ error }}</span
+    >{% endfor %}
+    <div class="input">
+      {{ field.csrf_token }} {{ field(placeholder="https://...",
+      class="input__url" ) }} {% endfor %}
+      <input type="submit" class="btn" value="Скоротити" />
+    </div>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block title %}Success{% endblock %} {% block
+content %}
+
+<script src="{{ url_for('static', filename='js/clipboard.min.js') }}"></script>
+
+<script>
+  var clipboard = new ClipboardJS(".btn");
+  clipboard.on("Помилка", function (e) {
+    console.log(e);
+  });
+</script>
+
+<div class="content">
+  <h2>Посилання успiшно скорочено!</h2>
+
+  <div class="input">
+    <a
+      class="btn btn__copy"
+      data-clipboard-text="{{ url_for('index', _external=True) }}{{ code }}"
+      >Copy</a
+    >
+    <input type="text" value=" your.url/{{ code }}" />
+  </div>
+  <div class="original-link">
+    Redirects to:
+    <img
+      src="https://www.google.com/s2/favicons?domain={{ old }}"
+      height="16px"
+      alt="favicon"
+    />
+    {{ old }}
+  </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+{% endblock %}
