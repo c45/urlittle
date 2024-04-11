@@ -14,4 +14,6 @@ class Url(db.Model):
     def __repr__(self):
         return '<URL %s>' % self.original_url
 
+with current_app.app_context():
+  db.create_all()
 

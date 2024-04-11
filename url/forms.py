@@ -1,6 +1,5 @@
 from flask_wtf import FlaskForm
 from wtforms import validators, StringField
-from wtforms.validators import Length
 
 
 class urlForm(FlaskForm):

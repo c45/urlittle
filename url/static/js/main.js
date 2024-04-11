@@ -3,7 +3,7 @@ copyEl.addEventListener("click", function () {
   if (copyEl.classList.contains("btn__copy")) {
     copyEl.classList.remove("btn__copy");
     copyEl.classList.add("btn__copied");
-    copyEl.textContent = "Copied";
+    copyEl.textContent = "✅";
   }
 
   setTimeout(function () {

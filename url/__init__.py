@@ -8,6 +8,6 @@ app.config.from_object(Config)
 
 db = SQLAlchemy(app)
 csrf = CSRFProtect(app)
-
+app.app_context().push()
 
 from url import routes, models

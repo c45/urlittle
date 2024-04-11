@@ -37,7 +37,7 @@ def index():
     return render_template("index.html", form=form)
 
 
-@app.route('/<new>')
+@app.route('/<short_url>')
 def redirect_to_old(short_url):
     short_url = Url.query.filter_by(short_url=short_url).first()
     if short_url is None:

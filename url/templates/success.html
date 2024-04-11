@@ -17,18 +17,9 @@ content %}
     <a
       class="btn btn__copy"
       data-clipboard-text="{{ url_for('index', _external=True) }}{{ code }}"
-      >Copy</a
+      >📋</a
     >
-    <input type="text" value=" your.url/{{ code }}" />
-  </div>
-  <div class="original-link">
-    Redirects to:
-    <img
-      src="https://www.google.com/s2/favicons?domain={{ old }}"
-      height="16px"
-      alt="favicon"
-    />
-    {{ old }}
+    <input type="text" value=" https://urlittle.pp.ua/{{ code }}" />
   </div>
 </div>
 
