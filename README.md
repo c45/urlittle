@@ -17,7 +17,8 @@ But if you know Docker, then you can just:
     docker build -t urlittle .
     
 ## Using
-
+Run:
+    
     python main.py
     
 if you are using Docker:
