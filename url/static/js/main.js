@@ -7,7 +7,7 @@ copyEl.addEventListener("click", function () {
   }
 
   setTimeout(function () {
-    copyEl.textContent = "Copy";
+    copyEl.textContent = "📋";
     copyEl.classList.remove("btn__copied");
     copyEl.classList.add("btn__copy");
   }, 2500);

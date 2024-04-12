@@ -2,8 +2,6 @@ flask~=3.0.2
 Flask-SQLAlchemy
 flask-wtf
 sqlalchemy~=2.0.29
-flask-migrate
-flask-login~=0.6.3
 pip~=24.0
 attrs~=23.1.0
 distro~=1.9.0
