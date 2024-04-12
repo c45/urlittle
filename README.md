@@ -1,5 +1,5 @@
 <h2>URLittle is a URL shortening service built with the Flask framework</h2>
-For a live demo, you can visit <a href='www.urlittle.pp.ua'>urlittle.pp.ua</a>
+For a live demo, you can visit <a href='https://www.urlittle.pp.ua'>www.urlittle.pp.ua</a>
 
 ## Building
 
